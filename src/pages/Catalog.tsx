@@ -54,11 +54,6 @@ const ProductCard = ({
             (e.target as HTMLImageElement).src = "/placeholder.svg";
           }}
         />
-        {hasMultiple && (
-          <span className="absolute top-2 right-2 rounded-full bg-primary px-2 py-0.5 text-[10px] font-bold text-primary-foreground">
-            {product.variants.length} {t("catalog.variants")}
-          </span>
-        )}
       </Link>
 
       <div className="flex flex-1 flex-col p-2.5 sm:p-4 gap-1.5 sm:gap-2">
